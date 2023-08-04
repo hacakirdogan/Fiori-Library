@@ -15,7 +15,7 @@
   },
   "devDependencies": {
     "@sap/ux-ui5-tooling": "1",
-    "@ui5/cli": "^2.14.1"
+    "@ui5/cli": "^3.3.4"
   },
   "scripts": {
     "start": "fiori run --open \"test/flpSandbox.html?sap-ui-xx-viewCache=false#excelimport-display\"",
