@@ -1,0 +1,70 @@
+<mvc:View
+    controllerName="csvupload.controller.CSVUpload"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:u="sap.ui.unified"
+    xmlns:l="sap.ui.layout.form"
+    displayBlock="true"
+>
+    <Page
+        id="page"
+        title="{i18n>title}"
+    >
+        <content>
+            <l:SimpleForm editable="true">
+                <l:content>
+                    <Label text="File Name" />
+                    <VBox>
+                        <u:FileUploader
+                            id="idfileUploader"
+                            width="50%"
+                            sameFilenameAllowed="false"
+                            buttonText=""
+                            fileType="CSV"
+                            placeholder="Choose a CSV file"
+                            style="Emphasized"
+                        />
+                        <Button
+                            text="Upload"
+                            press="onUpload"
+                        />
+                    </VBox>
+                </l:content>
+            </l:SimpleForm>
+
+            <Table
+                id="idTable"
+                items="{/}"
+            >
+                <items>
+                    <ColumnListItem>
+                        <cells>
+                            <Text text="{ID}" />
+                            <Text text="{vehicle}" />
+                            <Text text="{capacity}" />
+                            <Text text="{latitude}" />
+                            <Text text="{longitude}" />
+                        </cells>
+                    </ColumnListItem>
+                </items>
+                <columns>
+                    <Column>
+                        <Text text="ID" />
+                    </Column>
+                    <Column>
+                        <Text text="Vehicle" />
+                    </Column>
+                    <Column>
+                        <Text text="Capacity" />
+                    </Column>
+                    <Column>
+                        <Text text="Latitude" />
+                    </Column>
+                    <Column>
+                        <Text text="Longitude" />
+                    </Column>
+                </columns>
+            </Table>
+        </content>
+    </Page>
+</mvc:View>
