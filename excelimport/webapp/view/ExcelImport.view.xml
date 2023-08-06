@@ -1,9 +1,9 @@
 <mvc:View
     controllerName="excelimport.controller.ExcelImport"
-    xmlns:mvc="sap.ui.core.mvc"
-    displayBlock="true"
     xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
     xmlns:excel="cc.spreadsheetimporter.button.v0_10_0"
+    displayBlock="true"
 >
     <Page
         id="page"
