@@ -20,6 +20,7 @@
 ## exceldownload
 
 A Fiori application.
+Reference: https://sapui5.hana.ondemand.com/#/entity/sap.ui.export.Spreadsheet
 
 ### Starting the generated app
 
