@@ -1,0 +1,54 @@
+<mvc:View
+    controllerName="exceldownload.controller.ExcelDownload"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+    <Page
+        id="page"
+        title="{i18n>title}"
+    >
+        <headerContent>
+            <Button
+                text="Export"
+                icon="sap-icon://excel-attachment"
+                press="onExport"
+            />
+        </headerContent>
+        <Table
+            id="vehicles_tab"
+            class="sapUiResponsiveMargin"
+            width="auto"
+            items="{vehicle>/Vehicles}"
+        >
+            <columns>
+                <Column>
+                    <Text text="Vehicle" />
+                </Column>
+                <Column>
+                    <Text text="Latitude" />
+                </Column>
+                <Column>
+                    <Text text="Longitude" />
+                </Column>
+                <Column>
+                    <Text text="Start Time" />
+                </Column>
+                <Column>
+                    <Text text="End Time" />
+                </Column>
+            </columns>
+            <items>
+                <ColumnListItem>
+                    <cells>
+                        <ObjectIdentifier text="{vehicle>vehicle}" />
+                        <Text text="{vehicle>latitude}" />
+                        <Text text="{vehicle>longitude}" />
+                        <Text text="{vehicle>start}" />
+                        <Text text="{vehicle>end}" />
+                    </cells>
+                </ColumnListItem>
+            </items>
+        </Table>
+    </Page>
+</mvc:View>

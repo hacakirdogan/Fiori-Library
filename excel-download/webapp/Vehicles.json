@@ -1,0 +1,37 @@
+{
+    "Vehicles": [
+        {
+            "ID": "0d6e5b5f-baa2-4cd7-8b48-693365092797",
+            "vehicle": "Araç1",
+            "latitude": 41.020318229638,
+            "longitude": 29.04687657961709,
+            "start": "08:00:00",
+            "end": "17:00:00",
+            "HasActiveEntity": false,
+            "HasDraftEntity": false,
+            "IsActiveEntity": true
+        },
+        {
+            "ID": "137d5622-8131-4358-ab5c-eae3702fdb00",
+            "vehicle": "Araç2",
+            "latitude": 41.020318229638,
+            "longitude": 29.04687657961709,
+            "start": "08:00:00",
+            "end": "17:00:00",
+            "HasActiveEntity": false,
+            "HasDraftEntity": false,
+            "IsActiveEntity": true
+        },
+        {
+            "ID": "24776592-5a2a-45ff-82ce-f0c44355920a",
+            "vehicle": "Araç3",
+            "latitude": 41.020318229638,
+            "longitude": 29.04687657961709,
+            "start": "08:00:00",
+            "end": "17:00:00",
+            "HasActiveEntity": false,
+            "HasDraftEntity": false,
+            "IsActiveEntity": true
+        }
+    ]
+}

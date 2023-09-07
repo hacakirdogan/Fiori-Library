@@ -14,7 +14,7 @@
                 id="excelUploadButton"
                 standalone="true"
                 text="Excel Upload Button"
-                columns="customer,product_ID,quantity"
+                columns="product_ID,quantity"
                 uploadButtonPress="uploadButtonPress"
             />
             <Table
