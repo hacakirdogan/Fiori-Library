@@ -9,6 +9,9 @@
         title="{i18n>title}"
     >
         <headerContent>
+            <OverflowToolbar>
+                <SearchField search=".onFilterVehicles" />
+            </OverflowToolbar>
             <Button
                 text="Export"
                 icon="sap-icon://excel-attachment"
